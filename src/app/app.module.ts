@@ -12,6 +12,7 @@ import { FordComponent } from './pages/ford/ford.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { DetailComponent } from './pages/detail/detail.component';
+import { HeaderComponent } from './main-components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DetailComponent } from './pages/detail/detail.component';
     FordComponent,
     Page404Component,
     CatalogoComponent,
-    DetailComponent
+    DetailComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
