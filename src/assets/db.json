@@ -1,0 +1,56 @@
+[
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "model": "500L",
+        "modelImage": "https://storage.edidomus.it/ListinoAuto/webFoto_16_9_1280/90019812.jpg",
+        "year": 2015,
+        "price": 7500,
+        "available": false
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "model": "500 Abarth",
+        "modelImage": "https://immagini.alvolante.it/sites/default/files/styles/anteprima_lunghezza_640_jpg/public/serie_auto_galleria/2016/07/abarth_595_ant.png?itok=J3bXgIq0",
+        "year": 2010,
+        "price": 3500,
+        "available": true
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://picsum.photos/100/100?random=8",
+        "model": "Taurus",
+        "modelImage": "https://statics.quattroruote.it/content/dam/quattroruote/it/news/novita/2015/04/21/ford_taurus_al_salone_di_shanghai_la_berlina_dedicata_al_mercato_cinese/gallery/rsmall/2015-Ford-Taurus-3.jpg",
+        "year": 2009,
+        "price": 5200,
+        "available": false
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://picsum.photos/100/100?random=8",
+        "model": "Focus",
+        "modelImage": "https://www.autoscout24.it/cms-content-assets/162R5nC59akk9Pv9knn5wU-3be7affe23573534e59232eb937743c5-ford-focus-back-1100.jpg",
+        "year": 2014,
+        "price": 9700,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "model": "A3",
+        "modelImage": "https://www.romanoautomobili.it/wp-content/uploads/2017/02/NUOVA-AUDI-A3-NOLEGGIO-LUNGO-TERMINE-1.jpg",
+        "year": 2012,
+        "price": 4300,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "model": "Q7",
+        "modelImage": "https://audishop.pe/wp-content/uploads/2021/05/Q7-Progressive-Beigi-Vicu%E0%B8%84a-del.png",
+        "year": 2020,
+        "price": 41700,
+        "available": false
+    }
+]

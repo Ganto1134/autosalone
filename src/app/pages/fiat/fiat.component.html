@@ -1,0 +1,25 @@
+<main class="d-flex flex-column align-items-center">
+  <h2 class="text-center">La nostra selezione di Fiat</h2>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4" *ngFor="let modello of fiatAuto">
+      <div
+        class="card h-100"
+        [ngClass]="{
+          'bg-success': modello.available,
+          'bg-danger': !modello.available
+        }"
+      >
+        <img
+          class="card-img-top"
+          [src]="modello.modelImage"
+          [alt]="'immagine di ' + modello.model"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ modello.model }}</h5>
+          <p class="card-text">Prezzo: {{ modello.price }}$</p>
+          <p class="card-text">{{ modello.year }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
