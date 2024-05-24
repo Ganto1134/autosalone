@@ -1,7 +1,7 @@
 <main class="d-flex flex-column align-items-center">
   <h2 class="text-center">Tutta la nostra selezione</h2>
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-6 col-lg-4" *ngFor="let modello of autoArr">
+  <div class="row justify-content-center col-11">
+    <div class="col-12 col-md-6 col-lg-4 mb-4" *ngFor="let modello of autoArr">
       <div
         class="card h-100"
         [ngClass]="{
@@ -18,14 +18,18 @@
           <h5 class="card-title">{{ modello.model }}</h5>
           <p class="card-text">Prezzo: {{ modello.price }}$</p>
           <p class="card-text">{{ modello.year }}</p>
-          <a
-            [routerLink]="'/' + modello.brand.toLowerCase()"
-            class="btn btn-primary"
-            >{{ modello.brand }}</a
-          >
-          <a class="btn btn-primary" [routerLink]="[modello.model]"
-            >Dettaglio</a
-          >
+          <div class="d-flex justify-content-between align-items-center">
+            <a
+              [routerLink]="'/' + modello.brand.toLowerCase()"
+              class="btn btn-primary"
+              >{{ modello.brand }}</a
+            >
+            <a
+              class="btn btn-secondary"
+              [routerLink]="['/modelli', modello.model]"
+              >Dettagli</a
+            >
+          </div>
         </div>
       </div>
     </div>

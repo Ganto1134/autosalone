@@ -1,1 +1,32 @@
-<p>detail works!</p>
+<main class="d-flex flex-column align-items-center">
+  <h2 class="text-center" *ngIf="currentAuto">
+    La nostra {{ currentAuto.model }}
+  </h2>
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div
+        class="card h-100"
+        [ngClass]="{
+          'bg-success': currentAuto.available,
+          'bg-danger': !currentAuto.available
+        }"
+      >
+        <img
+          class="card-img-top"
+          [src]="currentAuto.modelImage"
+          [alt]="'immagine di ' + currentAuto.model"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ currentAuto.model }}</h5>
+          <p class="card-text">Prezzo: {{ currentAuto.price }}$</p>
+          <p class="card-text">{{ currentAuto.year }}</p>
+          <a
+            [routerLink]="'/' + currentAuto.brand.toLowerCase()"
+            class="btn btn-primary"
+            >{{ currentAuto.brand }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

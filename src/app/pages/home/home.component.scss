@@ -3,3 +3,10 @@
   height: 75%;
   object-fit: cover;
 }
+.logo-img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+}

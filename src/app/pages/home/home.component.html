@@ -1,7 +1,40 @@
 <main class="d-flex flex-column align-items-center">
+  <div class="row justify-content-center col-12 col-md-6 col-lg-4 mb-4">
+    <h2>Le nostre marche:</h2>
+    <div class="col-4 d-flex align-items-center justify-content-center">
+      <a routerLink="/fiat">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/2048px-Logo_della_Fiat.svg.png"
+          alt="logo fiat"
+          class="img-fluid logo-img"
+        />
+      </a>
+    </div>
+    <div class="col-4 d-flex align-items-center justify-content-center">
+      <a routerLink="/ford">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/1280px-Ford_logo_flat.svg.png"
+          alt="logo ford"
+          class="img-fluid logo-img"
+        />
+      </a>
+    </div>
+    <div class="col-4 d-flex align-items-center justify-content-center">
+      <a routerLink="/audi">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1426px-Audi_logo_detail.svg.png"
+          alt="logo audi"
+          class="img-fluid logo-img"
+        />
+      </a>
+    </div>
+  </div>
   <h2 class="text-center">Alcune delle nostre auto</h2>
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-6 col-lg-4" *ngFor="let modello of randomAuto">
+  <div class="row justify-content-center col-11">
+    <div
+      class="col-12 col-md-6 col-lg-4 mb-4"
+      *ngFor="let modello of randomAuto"
+    >
       <div
         class="card h-100"
         [ngClass]="{
